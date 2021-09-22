@@ -1,0 +1,239 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "Overpass", sans-serif;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+/* 
+font-family: 'Overpass', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+ */
+button {
+  font-family: "Ubuntu", sans-serif;
+  margin-right: 15px;
+  padding: 14px 19px;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+}
+
+.hero {
+  background-image: url("/images/bg-pattern-intro.svg"), linear-gradient(135deg, #ff8f70, #ff3d54);
+  background-position: 30% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  border-bottom-left-radius: 100px;
+  text-align: center;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 150px;
+}
+.hero header {
+  align-self: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 2.5rem;
+  padding-bottom: 1.5rem;
+}
+.hero header .logo__menu {
+  display: flex;
+  justify-content: space-evenly;
+}
+.hero header .logo__menu .logo {
+  margin-right: 45px;
+}
+.hero header .logo__menu .menu {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.hero header .logo__menu .menu .menu__item {
+  position: relative;
+  margin: 0 10px 0 10px;
+}
+.hero header .logo__menu .menu .menu__item p {
+  color: white;
+}
+.hero header .logo__menu .menu .menu__item p::after {
+  content: url("/images/icon-arrow-light.svg");
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+}
+.hero header .logo__menu .menu .menu__item ul {
+  position: absolute;
+  top: 25px;
+  left: -15px;
+  background: white;
+  border-radius: 7px;
+  padding: 28px;
+  font-size: 15px;
+  display: none;
+}
+.hero header .logo__menu .menu .menu__item:hover ul {
+  display: block;
+}
+.hero header .call_to_action .login {
+  background: transparent;
+  color: white;
+}
+.hero .info {
+  width: 100%;
+  color: white;
+  margin: 30px 0 50px 0;
+}
+.hero .info h1 {
+  font-size: 60px;
+  margin-bottom: -5px;
+}
+.hero .info p {
+  font-weight: 200;
+}
+.hero .info .stfre {
+  color: #ff525d;
+}
+.hero .info .l-mor {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+.section1 {
+  margin-top: 50px;
+  position: relative;
+  text-align: center;
+}
+.section1 .section_heading {
+  font-size: 35px;
+  position: relative;
+  top: 100px;
+}
+.section1 .section__content {
+  display: flex;
+  margin-top: -50px;
+}
+.section1 .section__content .left {
+  text-align: left;
+  width: 40%;
+  align-self: center;
+  position: relative;
+  left: 150px;
+}
+.section1 .section__content .right {
+  width: 60%;
+  height: 700px;
+  position: relative;
+  right: -250px;
+  background: url("/images/illustration-editor-desktop.svg");
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.section2 {
+  margin-top: 50px;
+  height: 350px;
+  background-color: #3f4164;
+  border-bottom-left-radius: 80px;
+  border-top-right-radius: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+.section2 .left {
+  width: 100%;
+  background: url("/images/bg-pattern-circles.svg");
+  background-position: bottom left;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.section2 .left img {
+  position: relative;
+  top: -60px;
+  left: 80px;
+  height: 150%;
+}
+.section2 .right {
+  width: 100%;
+  align-self: center;
+  padding-right: 20px;
+  color: white;
+  margin-right: 60px;
+}
+
+.section3 {
+  margin-top: 80px;
+}
+.section3 .section__content {
+  display: flex;
+  margin-top: -20px;
+}
+.section3 .section__content .left {
+  width: 60%;
+  height: 700px;
+  position: relative;
+  left: -230px;
+  background: url("/images/illustration-laptop-desktop.svg");
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.section3 .section__content .right {
+  text-align: left;
+  width: 40%;
+  align-self: center;
+  position: relative;
+  right: 150px;
+}
+
+footer {
+  background: #25252d;
+  color: white;
+  font-weight: 300;
+  border-top-right-radius: 100px;
+  padding: 40px;
+}
+footer .content {
+  padding: 50px 50px 0 80px;
+  margin-bottom: 70px;
+  display: flex;
+  justify-content: center;
+}
+footer .content div {
+  width: 100%;
+}
+footer .content h3 {
+  font-size: 18px;
+}
+footer .content ul {
+  padding: 0;
+  font-size: 14px;
+}
+footer .content ul li {
+  margin-bottom: 20px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: right;
+}
+.attribution a {
+  color: #3e52a3;
+}/*# sourceMappingURL=style.css.map */
