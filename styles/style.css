@@ -3,7 +3,6 @@ body {
   padding: 0;
   font-size: 16px;
   font-family: "Overpass", sans-serif;
-  overflow-x: hidden;
 }
 
 a {
@@ -30,6 +29,11 @@ button {
   outline: none;
   border: none;
   border-radius: 20px;
+}
+
+section,
+footer {
+  width: 100%;
 }
 
 span.mobile_toggle {
@@ -94,8 +98,6 @@ header .call_to_action .login {
   background-attachment: fixed;
   border-bottom-left-radius: 100px;
   text-align: center;
-  width: 100%;
-  overflow: hidden;
   font-weight: 600;
   display: flex;
   flex-direction: column;
@@ -104,7 +106,8 @@ header .call_to_action .login {
 .hero .info {
   width: 100%;
   color: white;
-  margin: 50px 0 50px 0;
+  margin: 50px 0;
+  padding: 30px 0;
 }
 .hero .info h1 {
   font-size: 60px;
@@ -124,7 +127,6 @@ header .call_to_action .login {
 }
 
 .section1 {
-  width: 100%;
   margin-top: 0;
   padding-top: 20px;
   position: relative;
@@ -136,61 +138,69 @@ header .call_to_action .login {
   top: 100px;
 }
 .section1 .section__content {
+  overflow: hidden;
   display: flex;
   margin-top: -50px;
 }
 .section1 .section__content .left {
   text-align: left;
-  width: 40%;
+  width: 80%;
   align-self: center;
   position: relative;
   left: 150px;
 }
 .section1 .section__content .right {
-  width: 60%;
-  height: 700px;
+  width: 100%;
+  height: 900px;
   position: relative;
-  right: -250px;
+  right: -15%;
   background: url("/images/illustration-editor-desktop.svg");
-  background-position: 50% 50%;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
 .section2 {
   margin-top: 50px;
-  height: 350px;
   background-color: #3f4164;
   border-bottom-left-radius: 80px;
   border-top-right-radius: 80px;
-  display: flex;
-  justify-content: space-between;
 }
-.section2 .left {
+.section2 .section__content {
+  display: flex;
+  justify-content: space-evenly;
+}
+.section2 .section__content .left {
   width: 100%;
   background: url("/images/bg-pattern-circles.svg");
   background-position: bottom left;
-  background-size: cover;
+  background-position: 20px 170%;
+  background-size: 90%;
   background-repeat: no-repeat;
 }
-.section2 .left img {
+.section2 .section__content .left img {
   position: relative;
-  top: -60px;
-  left: 80px;
-  height: 150%;
+  top: -20%;
+  left: 20%;
+  height: 100%;
 }
-.section2 .right {
-  width: 100%;
+.section2 .section__content .right {
+  width: 60%;
   align-self: center;
-  padding-right: 20px;
+  padding: 20px;
   color: white;
-  margin-right: 60px;
+  position: relative;
+  left: -10%;
+  top: 0;
+  text-align: left;
+  line-height: 32px;
+  margin: -15% 30px 0 -30px;
 }
 
 .section3 {
   margin-top: 80px;
 }
 .section3 .section__content {
+  overflow: hidden;
   display: flex;
   margin-top: -20px;
 }
@@ -198,9 +208,8 @@ header .call_to_action .login {
   width: 60%;
   height: 700px;
   position: relative;
-  left: -230px;
+  left: -15%;
   background: url("/images/illustration-laptop-desktop.svg");
-  background-position: 50% 50%;
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -217,9 +226,10 @@ footer {
   color: white;
   font-weight: 300;
   border-top-right-radius: 100px;
-  padding: 40px;
+  padding: 40px 0;
 }
 footer .content {
+  overflow: hidden;
   padding: 50px 50px 0 80px;
   margin-bottom: 70px;
   display: flex;
@@ -254,7 +264,6 @@ footer .content ul li {
 
   header {
     justify-content: space-between;
-    width: 100%;
     padding: 5px 30px;
   }
   header .menu {
@@ -268,20 +277,42 @@ footer .content ul li {
     color: white;
   }
 
-  .section1 {
+  .hero {
     width: 100%;
   }
+  .hero .info {
+    width: 90%;
+    color: white;
+    margin: 50px auto;
+    padding: 30px 0;
+  }
+  .hero .info h1 {
+    font-size: 40px;
+    margin-bottom: -5px;
+  }
+  .hero .info p {
+    margin: 30px;
+    font-weight: 200;
+  }
+  .hero .info .stfre {
+    color: #ff525d;
+  }
+  .hero .info .l-mor {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+  }
+
   .section1 .section_heading {
-    top: 50px;
+    top: 30px;
   }
   .section1 .section__content {
     flex-direction: column-reverse;
-    width: 100%;
     margin: 20px 0;
   }
   .section1 .section__content .left {
     text-align: center;
-    width: 100%;
+    width: 80%;
     margin: 5px auto;
     padding: 5px;
     position: relative;
@@ -291,67 +322,73 @@ footer .content ul li {
     margin-top: 70px;
   }
   .section1 .section__content .right {
-    width: 100%;
+    width: 80%;
     height: 400px;
     margin: 50px auto 0 auto;
     position: relative;
     left: 0;
-    background: url("/images/illustration-editor-desktop.svg");
     background-position: 50% 50%;
     background-size: contain;
     background-repeat: no-repeat;
   }
 
-  .section2 {
-    width: 100%;
+  .section2 .section__content {
+    height: -webkit-fit-content !important;
+    height: -moz-fit-content !important;
+    height: fit-content !important;
     flex-direction: column;
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
-    margin-top: 50%;
-    padding: 0 20px 40px 20px;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30%;
   }
-  .section2 .left {
-    width: 100%;
-    height: 200px;
+  .section2 .section__content .left {
+    text-align: center;
+    width: 80%;
     background: url("/images/bg-pattern-circles.svg");
+    background-position: -10px -100px;
     background-size: cover;
     background-repeat: no-repeat;
   }
-  .section2 .left img {
+  .section2 .section__content .left img {
     position: relative;
-    top: -60%;
-    left: 0px;
-    width: 100%;
+    top: -150px;
+    left: 0;
+    width: 80%;
   }
-  .section2 .right {
+  .section2 .section__content .right {
     text-align: center;
     width: 80%;
+    position: relative;
+    top: -100px;
+    left: 0;
     margin: -25px auto;
     color: white;
   }
 
+  .section3 {
+    margin-top: 50px;
+  }
   .section3 .section__content {
+    overflow: hidden;
     text-align: center;
     display: block;
-    width: 100%;
-    margin-top: -50px;
   }
   .section3 .section__content .left {
-    width: 100%;
-    height: 400px;
+    width: 90%;
+    height: 300px;
     position: relative;
     left: 0;
-    margin: -30px auto;
+    margin: 5px auto;
     background: url("/images/illustration-laptop-desktop.svg");
     background-position: 50% 50%;
-    background-size: contain;
+    background-size: 90%;
     background-repeat: no-repeat;
   }
   .section3 .section__content .right {
     text-align: center;
     width: 90%;
-    margin: 10px auto;
+    margin: 0px auto;
     position: relative;
     left: 0;
   }
@@ -360,10 +397,18 @@ footer .content ul li {
   }
 
   footer {
-    width: 100vw;
     text-align: center;
+    margin-top: 50px;
   }
   footer .content {
     display: block;
+  }
+  footer .content div:not(:first-child) {
+    margin-top: 50px;
+  }
+}
+@media (min-width: 1002px) {
+  .section2 {
+    height: 350px;
   }
 }/*# sourceMappingURL=style.css.map */

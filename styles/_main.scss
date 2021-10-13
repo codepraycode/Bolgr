@@ -3,7 +3,7 @@ body {
     padding: 0;
     font-size: 16px;
     font-family: 'Overpass', sans-serif;
-    overflow-x: hidden;
+    // overflow-x: hidden;
 }
 
 a {
@@ -32,6 +32,12 @@ button {
     outline: none;
     border: none;
     border-radius: 20px;
+}
+
+section,
+footer {
+    width: 100%;
+    // border: 2px solid green;
 }
 
 span.mobile_toggle {
@@ -102,8 +108,7 @@ header {
     background-attachment: fixed;
     border-bottom-left-radius: 100px;
     text-align: center;
-    width: 100%;
-    overflow: hidden;
+    // overflow: hidden;
     font-weight: 600;
     display: flex;
     flex-direction: column;
@@ -111,7 +116,8 @@ header {
     .info {
         width: 100%;
         color: $white;
-        margin: 50px 0 50px 0;
+        margin: 50px 0;
+        padding: 30px 0;
         h1 {
             font-size: 60px;
             margin-bottom: -5px;
@@ -133,7 +139,7 @@ header {
 
 .section1 {
     // background: $greyishblue;
-    width: 100%;
+    // width: 100%;
     margin-top: 0;
     padding-top: 20px;
     position: relative;
@@ -145,6 +151,7 @@ header {
         top: 100px;
     }
     .section__content {
+        overflow: hidden;
         display: flex;
         // align-items: center;
         // justify-content: space-around;
@@ -152,21 +159,20 @@ header {
         margin-top: -50px;
         .left {
             text-align: left;
-            width: 40%;
+            width: 80%;
             align-self: center;
             // margin-left: 70px;
             position: relative;
             left: 150px;
         }
         .right {
-            width: 60%;
-            height: 700px;
-            //border: 2px solid red;
+            width: 100%;
+            height: 900px;
             position: relative;
-            right: -250px;
+            right: -15%;
             background: url('/images/illustration-editor-desktop.svg');
-            background-position: 50% 50%;
-            background-size: contain;
+            // background-position: 50% 50%;
+            background-size: cover;
             background-repeat: no-repeat;
         }
     }
@@ -175,40 +181,51 @@ header {
 .section2 {
     margin-top: 50px;
     // position: relative;
-    height: 350px;
+    // height: 350px;
     background-color: $very-darkdesaturatedblue;
     border-bottom-left-radius: 80px;
     border-top-right-radius: 80px;
-    display: flex;
-    justify-content: space-between;
-    .left {
-        width: 100%;
-        // top: -60px;
-        // left: 100px;
-        background: url('/images/bg-pattern-circles.svg');
-        background-position: bottom left;
-        background-size: cover;
-        background-repeat: no-repeat;
-        img {
-            position: relative;
-            top: -60px;
-            left: 80px;
-            height: 150%;
+    .section__content {
+        display: flex;
+        justify-content: space-evenly;
+        .left {
+            width: 100%;
+            // border: 2px solid red;
+            // top: -60px;
+            // left: 100px;
+            background: url('/images/bg-pattern-circles.svg');
+            background-position: bottom left;
+            background-position: 20px 170%;
+            background-size: 90%;
+            background-repeat: no-repeat;
+            img {
+                position: relative;
+                top: -20%;
+                left: 20%;
+                height: 100%;
+            }
         }
-    }
-    .right {
-        width: 100%;
-        align-self: center;
-        padding-right: 20px;
-        color: $white;
-        // padding: 20px;
-        margin-right: 60px;
+        .right {
+            // border: 2px solid red;
+            width: 60%;
+            align-self: center;
+            padding: 20px;
+            color: $white;
+            position: relative;
+            left: -10%;
+            top: 0;
+            text-align: left;
+            line-height: 32px;
+            // padding: 20px;
+            margin: -15% 30px 0 -30px;
+        }
     }
 }
 
 .section3 {
     margin-top: 80px;
     .section__content {
+        overflow: hidden;
         display: flex;
         margin-top: -20px;
         .left {
@@ -216,9 +233,9 @@ header {
             height: 700px;
             //border: 2px solid red;
             position: relative;
-            left: -230px;
+            left: -15%;
             background: url('/images/illustration-laptop-desktop.svg');
-            background-position: 50% 50%;
+            // background-position: 50% 50%;
             background-size: contain;
             background-repeat: no-repeat;
         }
@@ -239,9 +256,11 @@ footer {
     //font-size: 12px;
     font-weight: 300;
     border-top-right-radius: 100px;
-    padding: 40px;
+    padding: 40px 0;
     //height: 350px;
     .content {
+        overflow: hidden;
+        // border: 2px solid red;
         padding: 50px 50px 0 80px;
         margin-bottom: 70px;
         display: flex;
